@@ -1,0 +1,106 @@
+body, head, h1, h2, h3 {
+    font-family:'roboto', sans-serif;
+}
+
+
+
+p {
+    font-weight: 300;
+    font-size: 11pt;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+ h1, h2, p, img {
+    padding: 50px;
+    text-align: center;
+}
+
+body {
+    background: url("../images/background.png") no-repeat center center fixed;
+    width: 100%;
+    background-size: cover;
+}
+
+footer {
+    font-size: 9pt;
+}
+
+img {
+    display:block; 
+    margin:auto;
+}
+
+.navbar {
+    background-color: transparent;
+    text-decoration-color: black;
+}
+
+.navbar a{
+    color: black;
+    font-size: 9pt;
+    font-weight: 700;   
+}
+
+.navbar a:hover, .navbar .active a {
+    color: rgb(216, 212, 253)
+}
+
+a:link {
+    color: rgb(203, 208, 255)
+}
+
+.input-group {
+    display:block;
+    margin: auto;
+}
+
+
+@keyframes autoRijden {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 900px;
+    }
+}
+
+@keyframes boomBewegen{
+    0% {
+        background-position-x: 700px;
+    }
+    100% {
+        background-position-x: 0;
+}}
+
+.animatie-auto { 
+    animation-name: autoRijden;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.weg {
+    
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    height: 5px;
+    background: black;
+    z-index: 10;
+}
+
+.automobiel {
+    position: relative;
+    top: 0px;
+    left: -200px;
+    z-index: 100;
+}
+
+.automobiel img {
+    width:400px;
+}
+
