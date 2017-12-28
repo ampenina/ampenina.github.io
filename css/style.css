@@ -1,21 +1,91 @@
-body, head, h1, h2, h3 {
+body, head, h1, h2, h3, h4{
     font-family:'roboto', sans-serif;
-}
-
-
-
-p {
     font-weight: 300;
     font-size: 11pt;
 }
 
-h1, h2 {
-    font-weight: bold;
+p {
+    font-weight: 300;
+    font-size: 11pt;
+    text-align:center;
 }
 
- h1, h2, p, img {
-    padding: 50px;
+h1 {
+    font-weight: bold;
+    font-size: 80pt;
+    padding-top: 200px;
+    text-align:center;  
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 60pt;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align:center;
+    
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 30pt;
     text-align: center;
+    margin-top: 30px;
+}
+
+.page1 {
+    padding-bottom: 300px;
+}
+
+.quote1 {
+    font-size: 35pt;
+}
+
+.quote2 {
+    color: white;
+    font-size: 15pt;
+}
+
+.foto {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.youtube {
+    padding-top: 150px; 
+    padding-left:10px;
+    padding-right:10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.quote {
+    font-weight: bold;
+    text-align:center;
+    font-size: 20pt;
+    color: rgb(134, 199, 199);
+}
+
+
+.kader {
+    border-style: solid;
+    padding: 100px;
+    background-color: white;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin: 0 auto;
+}
+
+.foodtruck {
+    padding-bottom: 200px;
+    margin-bottom: 50px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 body {
@@ -24,56 +94,69 @@ body {
     background-size: cover;
 }
 
+
 footer {
     font-size: 9pt;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    overflow:hidden;
+    bottom:0px;   
+    padding-top: 150px; 
 }
 
-img {
-    display:block; 
-    margin:auto;
+footer a{
+    color: white;
+}
+
+footer a:hover, .footer .active a{
+    color: black;
+    text-decoration: none;
+}
+
+.smaken {
+    padding:40px;
 }
 
 .navbar {
     background-color: transparent;
     text-decoration-color: black;
+    
 }
 
 .navbar a{
     color: black;
-    font-size: 9pt;
-    font-weight: 700;   
+    font-size: 10pt;
+    font-weight: 700;  
+    width: 150px;
 }
 
 .navbar a:hover, .navbar .active a {
-    color: rgb(216, 212, 253)
+    color: #a1c7bd;
 }
 
 a:link {
-    color: rgb(203, 208, 255)
+    color: rgb(161, 199, 189);
 }
 
+
 .input-group {
-    display:block;
-    margin: auto;
+    margin: 0 auto;
+    padding: 100px;
+    width: 100%;
 }
 
 
 @keyframes autoRijden {
     0% {
-        left: -200px;
+        left: 100px;
     }
     100% {
-        left: 900px;
+        left: 1000px;
     }
 }
 
-@keyframes boomBewegen{
-    0% {
-        background-position-x: 700px;
-    }
-    100% {
-        background-position-x: 0;
-}}
 
 .animatie-auto { 
     animation-name: autoRijden;
@@ -84,9 +167,9 @@ a:link {
 }
 
 .weg {
-    
+    position: relative;
     left: 0px;
-    top: 80px;
+    top: 150px;
     width: 100%;
     height: 5px;
     background: black;
@@ -94,13 +177,86 @@ a:link {
 }
 
 .automobiel {
-    position: relative;
-    top: 0px;
-    left: -200px;
-    z-index: 100;
+    position: absolute;
+    top: 500px;
+    left: 70;
+    z-index: 70;
 }
 
 .automobiel img {
-    width:400px;
+    width:300px;
+}
+
+#button {
+    background-color: black;
+    border-style: none;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.vet {
+    font-weight: 700;
+    text-align: right;
+    padding:10px;
+}
+
+.leftalign {
+    text-align: left;
+    padding: 10px;
+}
+
+.volgons {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.email {
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: 'roboto';
+    margin: 0 auto;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: 'roboto';
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.facebook {
+    background-size: 250px;
+    width: 80px;
+    height: 80px;
+    background-image:url("../images/sprite.png");
+    background-position: -80px 0;
+    float: right;
+}
+
+.instagram {
+    background-size: 250px;
+    width: 80px;
+    height: 80px;
+    background-image:url("../images/sprite.png");
+    background-position: -160px 0;
+    margin: 0 auto;
+}
+
+.twitter {
+    background-size: 250px;
+    width: 80px;
+    height: 80px;
+    background-image:url("../images/sprite.png");
+    float: left;
 }
 
