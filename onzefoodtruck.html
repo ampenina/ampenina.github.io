@@ -8,6 +8,14 @@
     
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#f2d7ff">
+
     <title>onze foodtruck</title>
 </head>
 <header>
@@ -42,16 +50,33 @@
                     <h2>onze foodtruck</h2>
                 </div>
 
+                <input type="button" id="button" class="btn btn-lg btn-primary" value="klik hier!"></input>
+                <script
+                  src="https://code.jquery.com/jquery-3.1.1.min.js"
+                  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                  crossorigin="anonymous">
+                </script>
+                <script>
+                  $(document).ready(function(){
+                    $("#button").click(function() {
+                        $("div.automobiel").addClass('animatie-auto');
+                    });
+                  })
+                </script>
+      
+          
+
          <div class="row">
             <div class="col-12 kader foodtruck">
               <div class="row">
-               Interesse in onze ijshoevemobiel op uw feestje of evenement (babyborrel, huwelijksviering, receptie, avondfeest, verjaardagsfeestje, …) ? 
+                <div class="col-sm-8 offset-sm-2"> Interesse in onze ijshoevemobiel op uw feestje of evenement (babyborrel, huwelijksviering, receptie, avondfeest, verjaardagsfeestje, …) ? <br><br>
                   
-                  Wij kunnen u 2 formules aanbieden voor het gebruik van de ijshoevemobiel, nl. eentje met of zonder bediening.	Wij bieden u tijdens het seizoen, van april tot september, een 10-tal verschillende smaken aan, ook qua sauzen of toppings hebt u een ruime keuze in onze kar van slagroom tot discobolletjes. Voor de kindjes is er buiten het schepijs nog een ruim aanbod aan waterijsjes terug te vinden. 
+                  Wij kunnen u 2 formules aanbieden voor het gebruik van de ijshoevemobiel, nl. eentje met of zonder bediening.	Wij bieden u tijdens het seizoen, van april tot september, een 10-tal verschillende smaken aan, ook qua sauzen of toppings hebt u een ruime keuze in onze kar van slagroom tot discobolletjes. Voor de kindjes is er buiten het schepijs nog een ruim aanbod aan waterijsjes terug te vinden. <br><br>
                   
                   Aarzel niet om contact met ons op te nemen voor een vrijblijvende offerte via info@frosty.com of 0497 506 124.
                 
             </div>
+          </div>
             
           </div>
           </div>
@@ -64,41 +89,29 @@
           <div class="animatiecontainer">
               <div class="weg"></div>  
             <div class="automobiel">
-                  <img src="./images/foodtruck.png">
+                  <img src="./images/foodtruck.png" alt="foodtruck">
               </div>  
 
              
-        <input type="button" id="button" class="btn btn-lg btn-primary" value="click here and try our mini foodtruck!"></input>
-        <script
-          src="https://code.jquery.com/jquery-3.1.1.min.js"
-          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-          crossorigin="anonymous">
-        </script>
-        <script>
-          $(document).ready(function(){
-            $("#button").click(function() {
-                $("div.automobiel").addClass('animatie-auto');
-            });
-          })
-        </script>
-  
+
 
 
   <footer>
     <div class="col-8">
       <div class="row">
-        <div class="col-sm-12 col-md-3">
-          arteveldehogeschool
-        </div>
+     
         <div class="col-sm-12 col-md-3">
         nina ampe
       </div>
         <div class="col-sm-12 col-md-3">
-            dossier
+          <a href="productiedossier.pdf">dossier</a>
           </div>
           <div class="col-sm-12 col-md-3">
             <a href="praktischeinfo.html">contact</a>
             </div> 
+            <div class="col-sm-12 col-md-3">
+              arteveldehogeschool
+            </div>
     </div>
     </div>
     </footer>
